@@ -1,0 +1,11 @@
+[Unit]
+After=network.target
+
+[Service]
+EnvironmentFile=-/etc/default/thermostat
+ExecStart=/usr/local/bin/thermostat.py
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
