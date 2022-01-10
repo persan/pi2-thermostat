@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-try:
-    import Adafruit_DHT
-    import silverpm
-except:
-    from stubs import silverpm
-    from stubs import Adafruit_DHT
+import Adafruit_DHT
+import silverpm
+#except:
+#    from stubs import silverpm
+#    from stubs import Adafruit_DHT
 
 import time
 import paho.mqtt.client as mqtt
